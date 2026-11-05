@@ -1,0 +1,74 @@
+/*CSS de cards1*/
+:root {
+    --primer-color: #081C15;
+    --segundo-color: #051923;
+    --tercero-color:#006494;
+    --cuarto-color:#0582CA;
+    --quinto-color:#7fc2e4;
+    --sexto-color:#00072d;
+    --borde: #003554; 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,
+    #111827, #334155);
+}
+
+.tarjeta{
+    background-color: var(--quinto-color);
+    border-top: 8px solid var(--borde);
+    border-radius: 12px;
+    text-align: center;
+    max-width: 420px;
+    padding: 2.5rem 2rem;
+    margin: 5rem 5rem;
+}
+.tarjeta{
+
+    transition: transform 0.3s ease, 
+    box-shadow 0.3s ease;
+}
+.tarjeta:hover{
+transform: translateY(-8px);
+box-shadow: 0 15px 30px rgba(255, 255, 255, 0.999);
+}
+.tarjeta__logo{
+    width: 150px;
+    height: 150 px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.tarjeta__encabezado{
+    text-transform: uppercase;
+    color: var(--primer-color);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.75rem;
+}
+.tarjeta__titulo{
+    font-size: 2.5rem;
+    color: var(--segundo-color);
+    font-weight: 700;
+}
+.tarjeta__frase{
+    font-size: 1.8rem;
+    color: var(--borde);
+}
+.tarjeta__autor{
+    font-size: 0.7rem;
+    color: var(--primer-color);
+}
+.tarjeta__canciones h2{
+    color: var(--segundo-color);
+    font-size: 1.2rem;
+}
+.tarjeta__canciones ul{
+    list-style: none;
+    padding: 0;
+}
+.tarjeta__canciones li{
+   margin: 8px;
+}
